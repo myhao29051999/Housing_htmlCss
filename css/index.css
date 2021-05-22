@@ -1,0 +1,698 @@
+/* GLOBAL */
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+/* HEADER */
+header{
+    padding: 20px 0;
+    background: rgba(25, 25, 25, 0.8);
+    position: fixed;
+    z-index: 29;
+    width: 100%;
+} 
+
+header .header__content a{
+    text-decoration: none;
+    color: #fff;
+}
+header li{
+    display: inline;
+    margin: 0 15px;  
+}
+.header__content{
+    width: 100%;
+    /* margin: 0 auto; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    
+}
+.header__content h1{
+    font-size: 3.5rem;
+    padding-right: 620px;
+    text-decoration: none;
+}
+.header__content h1 a span{
+    color: #00cdce;
+}
+.header__content nav ul li a{
+    text-decoration: none;
+    border-bottom: solid 2px #fff;
+    font-size: 1rem;
+
+    transition: all 0.5s;
+}
+.header__content nav ul li a:hover{
+    color: #00cdce;
+    border-bottom: none;
+}
+.header__content nav ul li a{
+    padding: 7px 0;
+}
+
+/* CAROUSEL */
+
+/* .caroudel .own-carousel{
+    position: relative;
+} */
+/* .owl-theme .owl-nav.disabled+.owl-dots{
+    position: absolute;
+    top: 85%;
+    left: 45%;
+} */
+.owl-carousel{
+    position: relative;
+}
+.owl-carousel .owl-nav{
+    position: absolute;
+    left: 50px;
+    font-size: 60px;
+    top:47%;
+    color: #d3d8d8;
+}
+.owl-carousel .owl-nav .owl-prev{
+    margin-right: 1378px;
+}
+.owl-carousel .owl-dots{
+    position: absolute;
+    bottom: 10%;
+    left: 45%;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot span {
+    background: #fff;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #000;
+}
+.item{
+    position: relative;
+    /* text-align: center; */
+}
+.carousel__text{
+    color: #fff;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 27em;
+}
+.carousel__text h4{
+    font-size: 60px;
+    font-weight: 900;
+    color: #FFF;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin: 0px 0px 10px;
+}
+.carousel__text p{
+    font-size: 24px;
+    font-weight: 400;
+    color: #d3d8d8;
+    line-height: 35px;
+}
+/* ABOUT */
+.about__content{
+    display: flex;
+    justify-content: space-around;
+}
+.about{
+    text-align: center;
+    width: 70%;
+    margin: 57px auto;
+}
+.about h3{
+    font-size: 4rem;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 50px;
+}
+.about__content a{
+    font-size: 2.5rem;
+    color: #000;
+}
+.about__content a i{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: solid 1px #7f7777;
+    /* Nếu icon hình tròn thì cho line-height bằng vs chiều cao là 100px cho chữ căn giữa theo chiều dọc. Nếu k tròn thì cứ cho giá trị px gần bằng */
+    line-height: 100px;
+
+    margin-bottom: 15px;
+    transition: all 0.5s;
+}
+.about__item p{
+    color: #7f7777;
+}
+.about__content i:hover{
+    background-color: #00cdce;
+}
+.aboutUs h4{
+    font-size: 1.875rem;
+    font-weight: 600;
+    color: #00cdce;
+    line-height: 5.125rem;
+}
+.aboutUs p{
+    font-size: 0.9375rem;
+    color: #000;
+    letter-spacing: 1px;
+}
+
+/* NUMBERS */
+.numbers{
+    text-align: center;
+    background-color: #00cdce;
+    padding: 80px 0;
+}
+.numbers__content{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.numbers h3{
+    font-size: 4rem;
+    font-weight: 500;
+    color: #000;
+}
+.numbers__item p:nth-child(1){
+    font-size: 3.5rem;
+    color: #fff;
+}
+.numbers__item p:nth-child(2){
+    font-size: 1.875rem;
+    color: #000;
+    letter-spacing: 5px;
+}
+/* xét kích thước để chữ k bị động như số */
+.numbers__item{
+    width: 25%;
+}
+/* BLOG */
+
+.blog__content{
+    display: flex;
+    justify-content: space-around;
+
+    width: 80%;
+    margin: 57px auto;
+}
+.blog{
+    text-align: center;
+    margin-top: 57px;
+}
+/* Bản chất hình là inline, trình duyệt sẽ tự thêm khoảng trắng dưới hình. muốn hết thì chuyển sang block */
+.blog__item img{
+    width: 100%;
+    display: block;
+}
+.blog__item{
+    padding: 0 30px;
+    text-align: left;
+}
+.blog__text{
+    background-color: #f3eeee;
+    padding: 20px 20px;
+}
+.blog__text a:nth-child(1){
+    text-decoration: none;
+    font-weight: 500;
+    color: #00cdce;
+    letter-spacing: 1px;
+    font-size: 1.5625rem;
+}
+.blog__text a:hover{
+    color: #000;
+}
+.blog__img{
+    border-top: solid 5px #00cdce;
+}
+.blog h3{
+    font-size: 4rem;
+    font-weight: 500;
+    color: #000;
+}
+.blog__text a:nth-child(2){
+    text-decoration: none;
+    color: #00cdce;
+    padding: 7px 18px;
+    background-color: #000;
+    display: inline-block;
+    font-size: 1.0625rem;
+    border: solid 1px #000;
+
+    margin-top: 10px;
+}
+.blog__text a:nth-child(2):hover{
+    color: #fff;
+}
+.modal .modal-dialog .modal-content .myModal-header .myClose{
+    color: #a0260f;;
+}
+/* GETMORE */
+.getMore__content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.getMore__item1 .getMore__item2{
+    grid-column: 1 / span 1;
+}
+.getMore__item1{
+    position: relative;
+}
+.getMore__item1 img{
+    width: 100%;
+    height: 100%;
+}
+.icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.icon a i{
+    color: white;
+    font-size: 35px;
+    padding: 16px 19px;
+    border-radius: 55%;
+    /* line-height: 34px; */
+    background-color:rgba(0, 189, 189, 0.53);
+}
+.mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close {
+    color: #FFF;
+    right: 13px;
+    text-align: left;
+    /* padding-right: 6px; */
+    width: 100%;
+}
+.vp-center .player {
+    max-height: 87%;
+    width: 87%;
+}
+.getMore__item2{
+    text-align: center;
+    background-color: #00cdce;
+    color: #fff;
+}
+.getMore__item2 h3{
+    font-size: 42px;
+    font-weight: 500;
+    color: #000;
+}
+.getMore__item2 p{
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    padding: 25px;
+}
+.item2__text{
+    padding: 50px;
+}
+.getMore__item2 a{
+    text-decoration: none;
+    color: #00cdce;
+    padding: 7px 18px;
+    background-color: #000;
+    display: inline-block;
+    font-size: 1.0625rem;
+    border: solid 1px #000;
+}
+.getMore__item2 a:hover{
+    color:#fff;
+}
+.popUpReadMore h5{
+    color: #fff;
+    font-weight: 600;
+    font-size: 34px;
+}
+.myModal-header{
+    background-color: #00cdce;
+}
+.btnReadMore{
+    background-color: #000;
+    color: #00cdce;
+    border-radius: 0%;
+    padding: 7px 18px;
+}
+.btnReadMore:focus{
+    box-shadow: none;
+}
+.btnReadMore:hover{
+    background-color: #000;
+    color: #fff;
+}
+.myModal-body img{
+    width: 100%;
+    height: 100%;
+}
+.myModal-body p{
+    font-size: 15px;
+    color: #999;
+    text-align: left;
+    padding: 2em 2em 1em;
+    line-height: 2em;
+}
+.myClose{
+    color: #a0260f
+}
+/* PORTFOLIO */
+.portfolio h3{
+    font-size: 4rem;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+    
+    margin: 60px 0;
+}
+.portfolio__content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    width: 70%;
+    margin: 0 auto;
+
+    gap: 10px 30px;
+
+}
+.portfolio__content .portfolio__item img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.portforlio__item{
+    position: relative;
+}
+.portforlio__text{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 90%;
+    height: 85%;
+    margin: 15px 18px;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    text-align: center;
+
+    opacity: 0;
+    transition: all 0.5s;
+}
+.portforlio__text:hover{
+    opacity: 1;
+}
+/* .portforlio__text h4::before{
+    content: "";
+    width: 100%;
+    height: 0.5px;
+
+    display: block;
+    background-color: white;
+    margin-top: 15px;
+}
+.portforlio__text h4::after{
+    content: "";
+    width: 100%;
+    height: 0.5px;
+
+    display: block;
+    background-color: white;
+    /* margin-top: 15px; */
+/* } */ 
+.portforlio__text h4{
+    border-top: 1px solid #00cdce;
+    border-bottom: 1px solid #00cdce;
+    padding: 30px 0;
+    color: #00cdce;
+
+}
+.someText{
+    padding: 42px;
+}
+/* SUBCRIBE */
+.subscribe{
+    background-color: #00cdce;
+    text-align: center;
+}
+.subscribe h3{
+    font-size: 4rem;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    
+    margin: 60px 0;
+    padding-top: 45px;
+}
+.subscribe__content form input{
+    font-size: 15px;
+    /* nếu thẻ con có font-size thì 1em = 15px(font-size của con) */
+    /* nếu thẻ con k có font-size thì sẽ lấy font-size của cha */
+    padding: 1em;
+    width: 36%;
+    border: #fff;
+   
+}
+.subscribe__content form input:focus{
+    outline: none;
+}
+.subscribe p{
+    font-size: 15px;
+    color: #ffffff;
+    padding: 1em 11em;
+    letter-spacing: 1px;
+
+    padding-bottom: 30px;
+}
+.subscribe__content form  button{
+    font-size: 24px;
+    letter-spacing: 2px;
+    color: #fff;
+    padding: 6px 50px;
+    border: 1px solid #000;
+    outline: none;
+    background-color: #000;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    
+    transition: all 0.5s;
+}
+.subscribe__content form  button:hover{
+    background-color: gray;
+    color: #000;
+    border: 1px solid #000;
+}
+/* AGENTS */
+.agents h3{
+    font-size: 4rem;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+    margin: 60px 0;
+}
+.agents__content{
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+.agent__item img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.agent__text{
+    background-color: rgba(0, 0, 0, 0.79);
+    text-align: center;
+    color: #fff;
+    padding: 15px 0;
+}
+.agent__text h4{
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #00cdce;
+}
+.agent__item:hover h4{
+    color: #fff;
+}
+.agent__text p{
+    margin: 10px 0;
+}
+.someIcon ul li{
+    list-style: none;   
+}
+.someIcon ul li a i{
+    width: 30px;
+    height: 30px;
+    border: solid 2px #fff;
+    line-height: 30px;
+    color: #fff;
+}
+.someIcon ul{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.someIcon ul li{
+    transition: all 0.5s;
+}
+.someIcon ul li:first-child:hover{
+    background-color: #3b5998;
+}
+.someIcon ul li:nth-child(2):hover{
+    background-color: #55acee;
+}
+.someIcon ul li:nth-child(3):hover{
+    background-color:#f26522;
+}
+/* MAP */
+.map{
+    border: 2px solid #00b6e3;
+    background: #bbb;
+    padding: 1em;
+    margin: 60px 0;
+}
+.map__content iframe{
+    width: 100%;
+}
+/* CONTACT */
+.contact h3{
+    font-size: 4rem;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+    margin: 60px 0;
+}
+.contact__content{
+    width: 70%;
+    margin: 0 auto;
+}
+.contact__content form{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+    gap: 20px 20px;
+}
+
+.contact__content form textarea{
+    grid-row: 1 / span 3;
+    grid-column: 2 / span 1;
+}
+.contact__content form input, .contact__content form textarea, .contact__content form button:focus{
+   outline: none;
+}
+.contact__content form input, .contact__content form textarea{
+    color: #000;
+    background: rgb(239, 239, 239);
+    border: none;
+    border-bottom: solid 2px #999;
+    transition: all 0.7s;
+    /* padding: 15px 0; */
+}
+.contact__content form input:hover, .contact__content form textarea:hover{
+    border-bottom: solid 2px #000; 
+}
+.contact__content form input, .contact__content form textarea::placeholder{
+    padding-left: 10px;
+    font-size: 16px;
+}
+.contact__content form button{
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    transition: all 0.5s;
+}
+.contact__content form button:hover{
+    background-color: #00cdce;
+    color: #000;
+}
+/* FOOTER */
+footer{
+    background-color: #00cdce;
+    color: #fff;
+    margin: 60px 0;
+}
+.footer__content{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: 0 auto;
+    align-items: center;
+
+    padding: 50px 0;
+}
+.footer__item ul{
+    list-style: none;
+    display: flex;
+
+    /* width: 70%;
+    margin: 0 auto; */
+}
+.footer__content ul li{
+    padding-left: 20px;
+    transition: all 0.5s;
+}
+.footer__content ul li a i{
+    width: 35px;
+    height: 35px;
+    border: 1px solid #fff;
+    line-height: 35px;
+    text-align: center;
+    color: #fff;
+}
+.footer__content ul li:first-child:hover i{
+    color: #3b5998;
+}
+.footer__content ul li:nth-child(2):hover i{
+    color: #00b6e3;
+}
+.footer__content ul li:nth-child(3):hover i{
+    color: #f26522;
+}
+.footer__content ul li:nth-child(4):hover i{
+    color: #45668e;
+    
+}
+.footer__text a{
+    color:red;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.footer__text a:hover{
+    color: #fff;
+
+}  
+/* BACK TO TOP */
+.backToTop{
+     /* bản chất thẻ a là in-line nên k đổi đc kích thước. phải chuyển sang block */
+    display: block;
+
+    position: fixed;
+    right: 50px;
+    bottom: 30px;
+    /* ẩn nút back to top */
+    /* bản chất của opacity là lm mờ k nhìn thấy nhưng k lm mất thẻ đó */
+    opacity: 0;
+    /* visibility, display:none */
+    visibility: hidden;
+    z-index: 40;
+}
+ /* back-to-top button visible */
+.cd-top--is-visible { 
+    visibility: visible;
+    opacity: 1;
+  }
